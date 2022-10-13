@@ -1,5 +1,61 @@
 .wrapper{
+    height: 100vh;
+    width: 100vw;
     display: grid;
-    grid-template-columns: repeat(3,100px);
-    grid-auto-rows: minmax(100px,auto);
+    grid-auto-rows: minmax(1px,auto);
+    border: 2px solid red;
+    background-color: white;
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    background-color: red;
+    
+}
+.logo{
+    margin: 10px;
+    text-align: end;
+    font-style: italic;
+    font-family:cursive;
+    color: white;
+}
+.btn{
+    margin: 10px;
+    width: fit-content;
+    cursor: pointer;
+    padding: 10px;
+    background-color: white;
+    border: 0;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.color_btn{
+    height: 35px;
+    width: 35px;
+    cursor: pointer;
+    padding: 10px;
+    border: red solid 3px;
+    border-radius: 10px;
+}
+.color_btn.active{
+    border: white solid 3px;
+}
+.color_btn.black{
+    background-color: black;
+}
+.color_btn.rgb{
+    background: red;
+    background: linear-gradient(90deg, red 1%,green 50%, blue 100%);;
+}
+.color_btn.grayscale{
+    background: white;
+    background: linear-gradient(45deg, white 0%, black 75%);
+}
+body{
+box-sizing: border-box;   
+height: 100vh;
+margin: 0;
+overflow: hidden;
 }
